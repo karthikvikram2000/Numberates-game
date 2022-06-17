@@ -1,6 +1,6 @@
 window.onload = function() {
     
-    document.addEventListener('keyup', pressEnter);
+    document.addEventListener('keydown', pressEnter);
     
 }
 function pressEnter(event) {
