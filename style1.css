@@ -1,0 +1,43 @@
+body{
+    height:100vh;
+    width:100vw;
+    padding-top:0%;
+    margin:0;
+    background-image:linear-gradient(to bottom right, rgba(227, 66, 152, 0.978), rgb(231, 173, 139));
+}
+.tile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+.textbox{
+    background-color: white;
+    height:30vh;
+    width:60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+  #hi{
+      color: white;
+  }
+#i{
+    height: 500px;
+    width:500px;
+      position: absolute;
+    top: 100px;
+    left: 0px;
+  }
+  #name{
+      color: rgb(195, 80, 60);
+  }
+  #smily{
+      height: 100px;
+      width:100px;
+
+  }
