@@ -1,13 +1,3 @@
-window.onload = function() {
-    
-    document.addEventListener('keydown', pressEnter);
-    
-}
-function pressEnter(event) {
-    if (event.keyCode === 13) {
-        checkValue();
-    }
-}
 function getRandomNumber() {
     let RN = Math.floor(Math.random() * 100) + 1;
     return RN;
@@ -48,9 +38,7 @@ function isNumeric(val) {
 }
 
 function checkalp(){
-    
     let noInp=document.getElementById("fname");
-    
     console.log("yes");
     var x=noInp.value;
 if(!(isNumeric(x)) || parseInt(x)>100 || parseInt(x)<1){
@@ -58,6 +46,5 @@ if(!(isNumeric(x)) || parseInt(x)>100 || parseInt(x)<1){
     console.log("NO");
 }
 }
-
 
 
