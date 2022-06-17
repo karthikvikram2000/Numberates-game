@@ -36,9 +36,16 @@ document.getElementById("fname").select();
 function isNumeric(val) {
     return /^-?\d+$/.test(val);
 }
-
+function enterSubmit() {
+        if (event.code === 'Enter')
+        {
+            checkValue();
+        }
+    }); 
 function checkalp(){
+    
     let noInp=document.getElementById("fname");
+    
     console.log("yes");
     var x=noInp.value;
 if(!(isNumeric(x)) || parseInt(x)>100 || parseInt(x)<1){
