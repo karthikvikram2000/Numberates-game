@@ -1,3 +1,13 @@
+window.onload = function() {
+    
+    document.addEventListener('keyup', pressEnter);
+    
+}
+function pressEnter(event) {
+    if (event.keyCode === 13) {
+        checkValue();
+    }
+}
 function getRandomNumber() {
     let RN = Math.floor(Math.random() * 100) + 1;
     return RN;
@@ -36,13 +46,7 @@ document.getElementById("fname").select();
 function isNumeric(val) {
     return /^-?\d+$/.test(val);
 }
-function enterSubmit(e) {
-        if (e.code === 'Enter')
-        {
-            console.log("it is correct");
-            checkValue();
-        }
-    }); 
+
 function checkalp(){
     
     let noInp=document.getElementById("fname");
