@@ -1,3 +1,14 @@
+window.onload = function() {
+    
+    document.addEventListener('keyup', pressEnter);
+   
+}
+
+function pressEnter(event) {
+    if (event.keyCode === 13) {
+        checkValue();
+    }
+}
 function getRandomNumber() {
     let RN = Math.floor(Math.random() * 100) + 1;
     return RN;
