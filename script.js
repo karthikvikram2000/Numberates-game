@@ -36,9 +36,10 @@ document.getElementById("fname").select();
 function isNumeric(val) {
     return /^-?\d+$/.test(val);
 }
-function enterSubmit() {
-        if (event.code === 'Enter')
+function enterSubmit(e) {
+        if (e.code === 'Enter')
         {
+            console.log("it is correct");
             checkValue();
         }
     }); 
